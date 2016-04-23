@@ -1,3 +1,6 @@
+# script that takes an integer input from the cmd line
+# and outputs wether it is positive or negative
+
 print "Input an integer: "
 num = Integer(gets.chomp)
 
