@@ -1,4 +1,5 @@
-require File.join File.dirname(__FILE__), 'http_to_json'
+# require File.join File.dirname(__FILE__), 'http_to_json'
+require './http_to_json'
 require 'httpclient'
 require 'json'
 
@@ -44,7 +45,7 @@ puts
 # looping over the languages hash and displaying all the languages in a readable manner.
 i = 0
 while i < languages.length
-  puts "#{languages.keys[i]}: #{languages.values[i]} bytes ~= #{languages.values[i]/1000} kB. #{languages.values[i]/25} lines roughly."
+  puts "#{languages.keys[i]}: \n \t#{languages.values[i]} bytes ~= #{languages.values[i]/1000} kB. \n \t#{languages.values[i]/25} lines roughly."
   puts
   i += 1
 end
